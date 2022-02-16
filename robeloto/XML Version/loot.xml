@@ -1,0 +1,96 @@
+<configs>
+
+<!-- Easier to find beaker -->
+<set xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot03']/item[@name='toolBeaker']/@loot_prob_template">low</set>
+
+<append xpath="/lootcontainers/lootgroup">
+
+<lootgroup name="RobelotoQuests">
+<item name="KillTheMummy"/>
+<item name="KillSomeGhosts"/>
+<item name="VeteranKiller"/>	
+</lootgroup>
+
+<lootgroup name="groupQuestSuperSet">
+<item name="armorSuperSetSchematic"/>
+</lootgroup>
+
+<lootgroup name="groupQuestRobelotoArmors">
+<item name="armorSteelBootsOfHaste"/>
+<item name="armorMagicPlateArmor"/>
+</lootgroup>
+
+<lootgroup name="groupMedicalRare">
+<item name="drugAntibioticsAmoxilSchematic" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="schematicsModsAndGeneralT2">
+<item name="drugAntibioticsAmoxilSchematic"/>
+</lootgroup>
+
+<lootgroup name="survivalMedical">
+<item name="drugAntibioticsAmoxilSchematic" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="schematicsToolsT2">
+<item name="gunToolSuperNailgunSchematic"/>
+</lootgroup>
+
+<lootgroup name="groupChemistryStationLoot03">
+<item name="drugAntibioticsAmoxil" count="1,2" loot_prob_template="low"/>
+</lootgroup>
+
+<lootgroup name="airdropMedicine">
+<item name="drugAntibioticsAmoxil" count="1,2" loot_prob_template="medLow"/>
+</lootgroup>
+
+<lootgroup name="groupQuestMedical">
+<item name="drugAntibioticsAmoxil" count="1,2" loot_prob_template="medLow"/>
+</lootgroup>
+
+<lootgroup name="groupBuriedLootStashTreasureSub" count="0,3">
+<item group="RobelotoQuests" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="groupBuriedSuppliesT1_03">
+<item group="RobelotoQuests" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="perkBooksT2">
+<item group="RobelotoQuests"/>
+</lootgroup>
+
+<lootgroup name="groupReading1">
+<item group="RobelotoQuests" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackReg03">
+<item group="RobelotoQuests" loot_prob_template="verylow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackStrong01">
+<item group="RobelotoQuests" loot_prob_template="veryLow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackStrong02">
+<item group="RobelotoQuests" loot_prob_template="low"/>
+</lootgroup>
+
+<lootgroup name="groupZpackStrong03">
+<item group="RobelotoQuests" loot_prob_template="low"/>
+</lootgroup>
+
+<lootgroup name="groupZpackBoss01">
+<item group="RobelotoQuests" loot_prob_template="low"/>
+</lootgroup>
+
+<lootgroup name="groupZpackBoss02">
+<item group="RobelotoQuests" loot_prob_template="medLow"/>
+</lootgroup>
+
+<lootgroup name="groupZpackBoss03">
+<item group="RobelotoQuests" loot_prob_template="medLow"/>
+</lootgroup>
+</append>
+
+</configs>

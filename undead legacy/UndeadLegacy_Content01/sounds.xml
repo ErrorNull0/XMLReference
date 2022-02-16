@@ -1,0 +1,362 @@
+<Subquake>
+	
+<remove xpath="/Sounds/SoundDataNode[starts-with(@name, 'bullethit')]/AudioClip"/>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitcloth']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitCloth1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitCloth2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitCloth3"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitCloth4"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitearth']">
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth3"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitglass']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitGlass1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitGlass2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitGlass3"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitmetal']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitMetal1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitMetal2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitMetal3"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitorganic']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitFlesh1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitFlesh2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitFlesh3"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitplant']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitPlant1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitPlant2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitPlant3"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitsnow']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitSnow1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitSnow2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitSnow3"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitstone']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitRock1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitRock2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitRock3"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitRock4"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitRock5"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitwater']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWater1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWater2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWater3"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWater4"/></append>
+<append xpath="/Sounds/SoundDataNode[@name='bullethitwood']">
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWoodB1"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWoodB2"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWoodB3"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWoodB4"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWoodB5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_BulletHitWoodB6"/></append>
+	
+<set xpath="/Sounds/SoundDataNode[@name='Auger_Fire_Start' or @name='chainsaw_fire_start']/Noise[@heat_map_strength='1.0']">0.1</set>
+<set xpath="/Sounds/SoundDataNode[@name='Auger_Fire_Start' or @name='chainsaw_fire_start']/Noise[@heat_map_time='90']">45</set>
+
+<append xpath="//Sounds">
+	
+<SoundDataNode name="ulmHeatMapSound"><AudioSource name="Sounds/AudioSource_Interact"/><Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Silence"/><LocalCrouchVolumeScale value="0.5"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="3.193"/></SoundDataNode>
+
+<SoundDataNode name="ulmDoor01Open"><AudioSource name="Sounds/AudioSource_UseAction"/><Noise ID="3" noise="30" time="3" heat_map_strength="0.1" heat_map_time="30"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Door_01_Open"/><LocalCrouchVolumeScale value="0.5"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmDoor01Close"><AudioSource name="Sounds/AudioSource_UseAction"/><Noise ID="3" noise="30" time="3" heat_map_strength="0.1" heat_map_time="30"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Door_01_Close"/><LocalCrouchVolumeScale value="0.5"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmDoor02Open"><AudioSource name="Sounds/AudioSource_UseAction"/><Noise ID="3" noise="30" time="3" heat_map_strength="0.1" heat_map_time="30"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Door_02_Open"/><LocalCrouchVolumeScale value="0.5"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmDoor02Close"><AudioSource name="Sounds/AudioSource_UseAction"/><Noise ID="3" noise="30" time="3" heat_map_strength="0.1" heat_map_time="30"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Door_02_Close"/><LocalCrouchVolumeScale value="0.5"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmLaserPistol_Fire"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Laser_01"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly1" AltSound="true"/>	
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPlasmaFire07"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_SciFi_07"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly1" AltSound="true"/>	
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPlasmaFire13"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_SciFi_13"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly1" AltSound="true"/>	
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmLaserPistol_Reload"><AudioSource name="Sounds/AudioSource_Reloads"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Reload_Laser_01"/><LocalCrouchVolumeScale value="0.5"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="silence"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="1" noise="7" time="2" muffled_when_crouched=".5"/>
+	<MaxVoices value="2"/><MaxRepeatRate value=".01"/></SoundDataNode>
+	
+<SoundDataNode name="ulmMinigunFireStart"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="4" noise="60" time="2" heat_map_strength="0.65" heat_map_time="90"/>
+	<Sequence/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Minigun_Rotation_Start"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Minigun_Loop" Loop="true"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Minigun_Rotation_Finish"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="3"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmMinigunFire"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="54" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Minigun"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="500"/>  <MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmMinigunFireEnd"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="54" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Minigun_Rotation_Finish"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="10"/>  <MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmElevatorButton"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Caatalyst_ElevatorBeep3"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+	
+<SoundDataNode name="ulmTerminalButton"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_UseTerminal01"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+	
+<SoundDataNode name="ulmTerminalRestricted"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_UserTerminalError01b"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+	
+<SoundDataNode name="ulmIngredientHasRecipe"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#../../Mods/UndeadLegacy/Resources/Subquake_Sounds.ulm?Select03"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+	
+<SoundDataNode name="ulmIngredientWithoutRecipe"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#../../Mods/UndeadLegacy/Resources/Subquake_Sounds.ulm?Denied01"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHelicopter_Start"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Helicopter_Start"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHelicopter_Shutdown"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Helicopter_Shutdown"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHelicopter01_Idle"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Helicopter_02_idle" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHelicopter01_Loop"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Helicopter_02_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHelicopter01b_Loop"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Helicopter_02_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHelicopter02_Loop"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Helicopter_03_On" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHelicopter02b_Loop"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Helicopter_03_On" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHorn04"><AudioSource name="Sounds/AudioSource_SmallHorn"/><Noise ID="4" noise="60" time="1" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_CarHorn_04b"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="3"/><MaxEntities name="6"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmHorn05"><AudioSource name="Sounds/AudioSource_SmallHorn"/><Noise ID="4" noise="60" time="1" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_CarHorn_05b"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="3"/><MaxEntities name="6"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmEngine09_Idle"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_09_idle" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmEngine01_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_01_accel"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine01_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_01_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine02_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_02_accel"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine02_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_02_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine03_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_03_accel4"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine03_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_03_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine04_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_04_accel"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine04_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_04_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine05_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_05_accel"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine05_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_05_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine06_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_06_accel"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine06_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_06_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine08_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_08_accel"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine07_Accel"><AudioSource name="Sounds/AudioSource_Vehicle"/><Noise ID="3" noise="30" time="2" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_07_accel"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine07_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_07_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+    
+<SoundDataNode name="ulmEngine08_On"><AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Engine_08_on" Loop="true"/><LocalCrouchVolumeScale value="1.0"/><CrouchNoiseScale value="0.5"/><NoiseScale value="1"/><MaxVoices value="10"/><MaxRepeatRate value="0.01"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire01"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_01"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly1" AltSound="true"/>	
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire02"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_02"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire03"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_03"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire04"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_04"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire05"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_05"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire06"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_06"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire07"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_07"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire08"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_08"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire09"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_09"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly1" AltSound="true"/>	
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/44magnum_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire10"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_10"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire11"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_11"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire12"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_12"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire13"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_13"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire14"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_14"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire15"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_15a"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_15b"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_15c"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_15d"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmPistolFire16"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_16a"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Pistol_16b"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/pistol_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmMachineGunFire02"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_MachineGun_02"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmMachineGunFire04"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_MachineGun_04"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmMachineGunFire05"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_MachineGun_05"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+ <SoundDataNode name="ulmGunShootRifle01"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Rifle_01"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+   
+ <SoundDataNode name="ulmGunShootRifle02"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Rifle_02"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+   
+ <SoundDataNode name="ulmGunShootRifle03"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="62" time="2" muffled_when_crouched="0.8" heat_map_strength="0.75" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_Rifle_03"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="30"/><MaxVoicesPerEntity value="30"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmGunShootShotgunBM4"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="81" time="2" muffled_when_crouched="0.8" heat_map_strength="1.0" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4_01"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4_02"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4_03"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4_04"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4_05"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="20"/><MaxVoicesPerEntity value="6"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+<SoundDataNode name="ulmGunShootShotgunBM4Silenced"><AudioSource name="Sounds/AudioSource_WeaponFire"/><NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/><Noise ID="0" noise="38" time="2" muffled_when_crouched="0.8" heat_map_strength="0.8" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4E_01"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4E_02"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4E_03"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4E_04"/>
+	<AudioClip ClipName="#@modfolder:Resources/Subquake_SFX.ulm?Subquake_Gun_Fire_BM4E_05"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly3" AltSound="true"/><LocalCrouchVolumeScale value="1"/><CrouchNoiseScale value="1"/><NoiseScale value="1"/><MaxVoices value="20"/><MaxVoicesPerEntity value="6"/><MaxRepeatRate value="0.001"/></SoundDataNode>
+
+</append>
+    
+</Subquake>

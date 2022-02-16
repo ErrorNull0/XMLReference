@@ -1,0 +1,68 @@
+<Subquake>
+	
+<append xpath="/recipes">
+	
+<recipe name="resourceCobblestones" count="5">
+	<ingredient name="resourceClayLump" count="5"/>
+	<ingredient name="resourceRockSmall" count="5"/>
+</recipe>
+
+<upgrade group="Drones,PortableTurrets" step="10">
+	<entry quality="1,10" prob=".9">
+		<ingredient name="gunBotRoboticsParts" count="5"/></entry>
+	<entry quality="11,20" prob=".8">
+		<ingredient name="gunBotRoboticsParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/></entry>
+	<entry quality="21,30" prob=".7">
+		<ingredient name="gunBotRoboticsParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/></entry>
+	<entry quality="31,40" prob=".6">
+		<ingredient name="gunBotRoboticsParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/></entry>
+	<entry quality="41,50" prob=".5">
+		<ingredient name="gunBotRoboticsParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/></entry>
+	<entry quality="51,60" prob=".4">
+		<ingredient name="gunBotRoboticsParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/></entry>
+	<entry quality="61,70" prob=".3">
+		<ingredient name="gunBotRoboticsParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/></entry>
+	<entry quality="71,80" prob=".2">
+		<ingredient name="gunBotRoboticsParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/></entry>
+</upgrade>
+
+<repair group="Drones">
+	<entry quality="1,90">
+		<ingredient name="resourceRockSmall" count="15"/></entry>
+</repair>
+
+<repair group="PortableTurrets">
+	<entry quality="1,90">
+		<ingredient name="resourceScrapIron" count="15"/></entry>
+</repair>
+	
+<upgrade group="Pistols,Revolvers" step="10">
+	<entry quality="1,10" prob="1">
+		<ingredient name="gunHandgunT1PistolParts" count="5"/>
+	</entry>
+	<entry quality="11,20" prob="0.9">
+		<ingredient name="gunHandgunT1PistolParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="50"/>
+	</entry>
+</upgrade>
+	
+<!--
+<upgrade name="ulmStationCarpenter_1" output="ulmStationCarpenter_2">
+	<ingredient name="resourceScrapIron" count="20"/>
+	<ingredient name="ulmResourcePlank" count="10"/>
+	<ingredient name="resourceNail" count="24"/>
+	<ingredient name="ulmToolSaw"/>
+	<ingredient name="ulmMeleeAxeCarpenters"/>
+</upgrade>
+-->
+	
+</append>
+	
+</Subquake>

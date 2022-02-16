@@ -1,0 +1,6 @@
+<Subquake>
+    
+<set xpath="//backgrounds">
+    <tex file="#@modfolder:Resources/Subquake_UserInterface.ulm?Subquake_main_menu_background"/>
+</set>
+</Subquake>
